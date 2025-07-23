@@ -5,7 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { SignIn } from "./components/signIn";
-import { Profile } from "./components/profile";
+import { Profile } from "./components/profile/profile";
 
 function App() {
   return (

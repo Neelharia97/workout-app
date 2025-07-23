@@ -45,6 +45,7 @@ export const Profile = () => {
         profileName={profileName}
         lastWorkouts={lastWorkouts}
         nextWorkout={nextWorkout}
+        userId={userId}
       />
     </DashboardLayout>
   );

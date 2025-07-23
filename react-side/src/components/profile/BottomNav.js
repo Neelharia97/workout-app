@@ -3,10 +3,7 @@ import RestoreIcon from "@mui/icons-material/Restore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PersonIcon from "@mui/icons-material/Person";
 
-import { useNavigate, useLocation } from "react-router-dom";
-
 export const BottomTab = () => {
-  const navigate = useNavigate();
   return (
     <BottomNavigation
       sx={{
