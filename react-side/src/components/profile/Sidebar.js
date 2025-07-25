@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import {
   List,
   ListItem,
@@ -11,17 +11,20 @@ import HomeIcon from "@mui/icons-material/Home";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import GroupsIcon from "@mui/icons-material/Groups";
 import TaskIcon from "@mui/icons-material/Task";
-
+import LogoutIcon from "@mui/icons-material/Logout";
+import { useNavigate } from "react-router-dom";
 const menuItems = [
   { text: "Home", icon: <HomeIcon /> },
   { text: "Analytics", icon: <QueryStatsIcon /> },
   { text: "Clients", icon: <GroupsIcon /> },
   { text: "Tasks", icon: <TaskIcon /> },
+  { text: "Logout", icon: <LogoutIcon />, route: "../signin" },
 ];
 
 const drawerWidth = 220;
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   return (
     <Paper
       elevation={2}
@@ -41,6 +44,7 @@ const Sidebar = () => {
         {menuItems.map((item) => (
           <ListItem key={item.text} disablePadding>
             <ListItemButton
+              onClick={() => navigate(item.route)}
               sx={{
                 marginY: 1,
                 marginX: 1,

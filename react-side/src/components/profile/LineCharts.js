@@ -41,7 +41,7 @@ export const WeightGraph = ({ userId }) => {
       }}
     >
       {/* Pie Chart with Shadow */}
-      <Paper elevation={4} sx={{ p: 2, width: 320, borderRadius: 4 }}>
+      <Paper elevation={4} sx={{ p: 2, width: "35%", borderRadius: 4 }}>
         <Typography
           variant="h6"
           sx={{ fontWeight: 600, color: "#5A4FCF", mb: 2 }}
@@ -66,7 +66,7 @@ export const WeightGraph = ({ userId }) => {
       {/* Line Chart with Shadow */}
       <Paper
         elevation={4}
-        sx={{ p: 2, flex: 1, borderRadius: 4, minWidth: 500 }}
+        sx={{ p: 2, flex: 1, borderRadius: 4, width: "65%", minWidth: "auto" }}
       >
         <Typography
           variant="h6"

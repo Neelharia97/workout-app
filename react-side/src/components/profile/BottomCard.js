@@ -2,8 +2,11 @@ import { Box, Paper, Typography } from "@mui/material";
 
 const BottomCard = () => {
   return (
-    <Box sx={{ p: 3 }}>
-      <Paper elevation={0}>
+    <Box sx={{ p: 3, borderRadius: 15 }}>
+      <Paper
+        elevation={0}
+        sx={{ backgroundColor: "#F5F7FA", borderRadius: 15 }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -15,41 +18,11 @@ const BottomCard = () => {
             borderRadius: 15,
           }}
         >
-          <Box sx={{ p: 1, flex: 1 }}>
-            <Paper
-              elevation={1}
-              sx={{
-                p: 3,
-                borderRadius: 15,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Typography sx={{ textAlign: "center" }}>CALENDAR</Typography>
-            </Paper>
-          </Box>
-
-          <Box sx={{ p: 1, flex: 1, display: "flow" }}>
-            <Paper
-              elevation={1}
-              sx={{ p: 3, borderRadius: 15, justifyContent: "center" }}
-            >
-              <Typography sx={{ justifyContent: "center" }}>
-                CALENDAR
-              </Typography>
-            </Paper>
-          </Box>
-          <Box sx={{ p: 1, flex: 1, display: "flow" }}>
-            <Paper
-              elevation={1}
-              sx={{ p: 3, borderRadius: 15, justifyContent: "center" }}
-            >
-              <Typography sx={{ justifyContent: "center" }}>
-                CALENDAR
-              </Typography>
-            </Paper>
-          </Box>
+          <Typography
+            sx={{ p: 3, justifyContent: "center", fontFamily: "fantasy" }}
+          >
+            S&S Fitomania
+          </Typography>
         </Box>
       </Paper>
     </Box>

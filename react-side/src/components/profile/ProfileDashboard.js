@@ -31,14 +31,15 @@ const ProfileDashboard = ({
   const [value, setValue] = useState(dayjs("2022-04-17"));
 
   return (
-    <Paper elevation={0}>
+    <Paper elevation={0} sx={{ backgroundColor: "#F5F7FA" }}>
       <Box
         sx={{
           display: "flex",
           background:
             "linear-gradient(135deg,rgb(248, 248, 248),rgb(21, 21, 117))",
           fontFamily: "'Poppins', sans-serif",
-          overflowX: "auto",
+          maxWidth: "auto",
+          mx: "auto",
           borderRadius: 15,
         }}
       >
@@ -50,6 +51,8 @@ const ProfileDashboard = ({
             display: "flex",
             flexDirection: "column",
             borderRadius: 15,
+            maxWidth: "auto",
+            mx: "auto",
             overflowX: "auto",
           }}
         >
@@ -75,6 +78,8 @@ const ProfileDashboard = ({
                   color: "#5A4FCF",
                   mb: 2,
                   justifyContent: "center",
+                  maxWidth: "auto",
+                  mx: "auto",
                 }}
               >
                 Dashboard
@@ -91,6 +96,7 @@ const ProfileDashboard = ({
                   mb: 3,
                   display: "flex", // optional, if using layout inside
                   flexDirection: "column",
+                  borderRadius: 4,
                 }}
               >
                 <Typography
@@ -162,7 +168,7 @@ const ProfileDashboard = ({
               </LocalizationProvider>
             </Box>
 
-            <Box>
+            <Box sx={{ borderRadius: 15 }}>
               <Typography
                 variant="h3"
                 sx={{ fontWeight: 800, color: "#5A4FCF", mb: 1 }}
